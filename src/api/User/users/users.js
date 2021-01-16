@@ -9,12 +9,17 @@ module.exports = {
       const following = await ctx.prisma.user({ id: userId }).following();
 
       const userIds = following.map((user) => user.id);
-      return ctx.prisma.users({
+      let allUsers = await ctx.prisma.users({
         where: {
           id_not_in: userIds.concat([userId]),
         },
-        first: 4,
       });
+
+      // Shuffle array
+      const shuffled = allUsers.sort(() => 0.5 - Math.random());
+
+      // Get sub-array of first n elements after shuffled
+      return shuffled.slice(0, 5);
     },
   },
 };
