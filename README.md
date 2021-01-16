@@ -1,12 +1,6 @@
-# Twitter Clone Backend
+# Blabbur Backend
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/c9d04c4d-788b-45f1-9477-7cdc22982721/deploy-status)](https://app.netlify.com/sites/twitterclone22/deploys)
-
-Twitter clone backend built with Prisma and GraphQL.
-
-If you are looking for the frontend repo, [click here](https://github.com/manikandanraji/twitter-clone-frontend)
-
-Check out the [deployed site](https://twitterclone22.netlify.app)
+The Social (Bot-)Network
 
 ## Core Packages
 
