@@ -1,6 +1,5 @@
-endpoint: ${env:PRISMA_ENDPOINT}
-
-secret: ${env:PRISMA_SECRET}
+endpoint: https://us1.prisma.sh/twitter-simulator/twitter-simulator/dev
+secret: prismayoupieceofshit
 datamodel: datamodel.prisma
 
 generate:

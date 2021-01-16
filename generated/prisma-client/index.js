@@ -36,6 +36,7 @@ var models = [
 exports.Prisma = prisma_lib_1.makePrismaClientClass({
   typeDefs,
   models,
-  endpoint: `https://eu1.prisma.sh/manikandan/twitterclone/dev`
+  endpoint: `https://us1.prisma.sh/twitter-simulator/twitter-simulator/dev`,
+  secret: `${process.env["PRISMA_SECRET"]}`
 });
 exports.prisma = new exports.Prisma();
