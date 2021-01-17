@@ -18,6 +18,7 @@ module.exports = {
             },
           },
           orderBy: "createdAt_DESC",
+          first: 50,
         })
         .$fragment(TWEET_FRAGMENT);
 
